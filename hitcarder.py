@@ -97,6 +97,7 @@ class HitCarder(object):
         return False
 
     def get_info(self, html=None):
+        print('Get hit card info, which is the old info with updated new time')
         """Get hit card info, which is the old info with updated new time."""
         if not html:
             time.sleep(1)
