@@ -107,6 +107,7 @@ class HitCarder(object):
             old_infos = re.findall(r'oldInfo: ({[^\n]+})', html)
             if len(old_infos) != 0:
                 old_info = json.loads(old_infos[0])
+                print(old_info)
             else:
                 raise RegexMatchError("未发现缓存信息，请先至少手动成功打卡一次再运行脚本")
 
